@@ -1,0 +1,19 @@
+
+### Send POST request with json body
+POST {{base_url}}/Auth/login
+Content-Type: application/json
+
+{
+ "username": "{{username}}",
+ "password": "{{password}}"
+}
+
+### GET All Users
+GET {{base_url}}/User
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### Get User by id
+GET {{base_url}}/User/1
+Content-Type: application/json
+Authorization: Bearer {{token}}
